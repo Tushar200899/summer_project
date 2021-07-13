@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/newstyle.css">
+  <title></title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span><img src="/pl.png" alt=""></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Photolibrary</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">log-out</a>
+          </li>
+        </ul>
+        <form class="d-flex" action="https://www.google.com/search" role="search" target="_blank" method="GET" autocomplete="off">
+          <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" value="google search">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section class="hom">
+    <div id="homhead" class="container-fluid">
+    </div>
+  </section>
+  <section id="about">
+    <div class="py-5">
+      <h2 class="text-center">About Us</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <img src="/p1.jfif" width="100%" id="km-img" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <h2>Photolibrary</h2>
+          <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium obcaecati accusantium
+            porro, velit accusamus quaerat debitis natus quod nobis perferendis fugiat mollitia ipsam architecto nostrum
+            numquam recusandae non, dolore earum ad atque quas molestias modi. Et accusantium veniam fugit, dolorem
+            doloremque omnis nobis sapiente, reprehenderit aliquam corrupti blanditiis nemo!</p>
+          <p id="km" class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta fugit
+            rerum officia quod quam. Provident nostrum doloribus quod amet.</p>
+          <a href="#about" onclick="ext_p()" class="btn btn-success">know more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">our services</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGale9u4L_5GkZucixN2UMLeb25PJOEQjCqA&usqp=CAU"
+              alt="">
+            <div class="card-body">
+              <h4 class="card-title">Portrait</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#opt1" class="btn btn-primary" onclick="portrait_show()">Take a look</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Nature</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#opt2" class="btn btn-primary" onclick="nature_show()">Take a look</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAJoT0TDMPFNm_wSss81u9JwYQdb2kH_AnQ&usqp=CAU"
+              alt="">
+            <div class="card-body">
+              <h4 class="card-title">Commercial</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#opt3" class="btn btn-primary" onclick="commercial_show()">Take a look</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gal" class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">gallery</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row" id="defaultg">
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d1" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhngs3h24VlFpj7IOpJyEOQWNV0pLiKe7BZg&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d2" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapgjzJbsysvGw12tCmQFvHRibeCyftp_PQQ&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d3" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKNckgyF8CPugRMP5Rwcwj_4us8Rt5ETBvZQ&usqp=CAU">
+        </div>
+      </div>
+
+      <div class="row" id="opt1">
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d1" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW_Mj3MCD-XOvf5tirrGHEjcKq1AqzkeJgA&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d2" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHKQxjY1rDnpvPoHxlWPfRdaKBHnrL0mQ8g&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d3" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzkjaYjNav4tUiLUzVXYUvWZ7JDNEC_IpEg&usqp=CAU">
+        </div>
+      </div>
+
+      <div class="row" id="opt2">
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d1" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZpFIlHO2Wo-m4p1Y33DYDI5BYozF1kh9IZA&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d2" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyP2vktrvo9rlhz4jQDnSsI-D-WL92iX36Ig&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d3" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozQ1BI0o0mHT42QRo8MB7ypxMw37GiIJsdg&usqp=CAU">
+        </div>
+      </div>
+
+      <div class="row" id="opt3">
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d1" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScW8GoEfooj8iBwzQ_uy6kIfYyoyb9O4wrQw&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d2" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhqNw2YJT8yg5j12kRs-LP1HZKYjMbmdeYGg&usqp=CAU">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <img id="d3" class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShD8jGZ-QmCwBYpBICud-HHOlNSl_F-xqjKA&usqp=CAU">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 col-12">
+          <div class="fcont">
+            <div class="heading">
+              <p>
+                CONTACT US
+              </p>
+            </div>
+            <div class="sub-cont">
+              <ul>
+                <li>
+                  <i class="fas fa-phone-square-alt"></i>
+                  <span style="padding:10px 15px">+91-8222089745</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span style="padding:10px 15px">Support@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12">
+          <div class="links">
+            <div class="heading">
+              <p>Useful Links</p>
+            </div>
+            <div class="sub-cont">
+              <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">term and condition</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12">
+          <div class="subscribe">
+            <div class="heading">
+              <p>
+                Stay Connected With Us
+              </p>
+            </div>
+            <div class="sub-cont">
+              <div class="content-form">
+                <form>
+                  <input type="text" name="sub-mail" class="form-control" placeholder="Enter Your Email">
+                  <input type="submit" name="submit" class="btn btn-primary">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-12">
+          <div class="text">
+            <p>Made with ❤️ By @ Tushar</p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12">
+          <div class="lower social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkin.com"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12">
+          <div class="text">
+            <p>ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script1.js"></script>
+</body>
+
+</html>
