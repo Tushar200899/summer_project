@@ -25,10 +25,10 @@ span img{
     transform: translate(-50%, -50%);
 }
 .hom span h1{
-    font-size: 5vw;
+    font-size: 10vw;
 }
 .hom span p{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 .row img{
     height: 250px!important;
