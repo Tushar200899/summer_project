@@ -9,7 +9,7 @@ span img{
     border-radius: 20%;
 }
 .hom{
-    background-image: url('/1.jpg');
+    background-image: url('1.jpg');
     background-size: cover;
     width: 100%;
     height: 100vh;
